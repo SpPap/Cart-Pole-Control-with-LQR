@@ -27,7 +27,7 @@ where:
 The optimal control law is given by:
 
 $$
-\bf{u}(t) = -\bf{K} \bf{x}(t)
+\bf{u^*}(t) = -\bf{K} \bf{x}(t)
 $$
 
 where the gain matrix $\\bf{K}\$ is defined as:
@@ -42,10 +42,13 @@ $$
 \mathbf{A}^\top \mathbf{S} + \mathbf{S} \mathbf{A} - \mathbf{S} \mathbf{B} \mathbf{R}^{-1} \mathbf{B}^\top \mathbf{S} + \mathbf{Q} = 0
 $$
 
-## Cart Sole System
+## Cart Pole System
+### Schematic of the system 
+<p align="center ">
 <img src="https://github.com/user-attachments/assets/191b5c1f-7b6d-41d8-a1bc-c0d67aa160cd" width="500" height="350">
+</p>
 
-The nonlinear dynamics of the system are described as follows <br>
+### Nonlinear dynamics <br>
 
  $$
  \dot{x} = u
