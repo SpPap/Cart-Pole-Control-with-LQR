@@ -1,4 +1,4 @@
-# Cart-Sole-Control-with-LQR
+# Cart-Pole-Control-with-LQR
 <p align="justify ">
 In this repository, a Linear Quadratic Regulator (LQR) controller is developed to stabilize an inverted pendulum on a cart.</p>
 
