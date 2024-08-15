@@ -1,15 +1,17 @@
-""" This function describes the nonlinear dynamics of the
- cart-pole system 
+""" 
+This function describes the nonlinear dynamics of the
+cart-pole system 
 
- State vector: [x x' theta theta']
+State vector: [x x' theta theta']
 
- STATES
- x      : cart position x[1]
- x'     : cart velocity x[2]
- theta  : pendulum position x[3]
- theta' : pendulum angular velocity x[4]
+STATES
+x      : cart position x[1]
+x'     : cart velocity x[2]
+theta  : pendulum position x[3]
+theta' : pendulum angular velocity x[4]
 
- Author: Spiros Papadopoulos
+Author: Spiros Papadopoulos
+ 
 """
 import numpy as np
 

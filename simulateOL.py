@@ -1,3 +1,11 @@
+"""
+Simulation of the open-loop system (no controller)
+assuming iinitial conditions x0 = [0 0 pi + pi/8 0]
+
+Author: Spiros Papadopoulos
+
+"""
+
 import numpy as np
 from scipy.integrate import odeint
 import matplotlib.pyplot as plt
@@ -41,23 +49,19 @@ plt.figure()
 
 plt.subplot(4, 1, 1)
 plt.plot(t, x, 'b')
-plt.legend(loc='best')
 plt.ylabel('Cart Position, x (m)')
 
 plt.subplot(4, 1, 2)
 plt.plot(t, xDot, 'b')
-plt.legend(loc='best')
 plt.ylabel('Cart Velocity, x'' (m/s)')
 
 plt.subplot(4, 1, 3)
 plt.plot(t, np.rad2deg(theta), 'g')
-plt.legend(loc='best')
-plt.ylabel('Pendulum Position, theta (rad)')
+plt.ylabel('Pendulum Position, theta (deg)')
 
 plt.subplot(4, 1, 4)
 plt.plot(t, np.rad2deg(thetaDot), 'g')
-plt.legend(loc='best')
-plt.ylabel('Pendulum Angular Velocity, thetaDot (rad/s)')
+plt.ylabel('Pendulum Angular Velocity, thetaDot (deg/s)')
 
 plt.xlabel('Time, t (s)')
 
