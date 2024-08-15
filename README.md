@@ -83,6 +83,27 @@ where:
 - $F$ is the force applied to the cart (control input)
 - $c(), s()$ denote cos(), sin() respectively
 
+## Simulation Results
+
+### Open Loop
+Initial conditions:  $$\textbf{x} = [0 \ \  0 \ \ \pi+\frac{\pi}{8} \ \ 0]^T $$
+
+<p align="center ">
+<img src="https://github.com/user-attachments/assets/5e705b86-f84a-423a-ad00-719b61741b32" ">
+</p>
+
+### LQR Control 
+Reference vector  $$\textbf{x}^d = [1 \ \  0 \ \ \pi \ \ 0]^T $$
+
+<p align="center ">
+<img src="https://github.com/user-attachments/assets/960efe62-8e8a-4281-864b-d62b9f01be32" >
+</p>
+
+<p align="center ">
+<img src="https://github.com/user-attachments/assets/3e58e414-5e61-4b4d-ad61-bf6bb3138584" width="400" height="300">
+</p>
+
+
 ### References
 [1] Lewis, F. L., Vrabie, D. L., & Syrmos, V. L. (2012). Optimal Control. Wiley. https://doi.org/10.1002/9781118122631 <br>
 [2] Steven L. Brunton, & J. Nathan Kutz. (2021). Data-Driven Science and Engineering Machine Learning, Dynamical Systems, and Control. Cambridge University Press.
