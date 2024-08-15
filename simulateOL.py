@@ -47,21 +47,25 @@ for i in range(1, int(totalSteps)):
 # Plot figures
 plt.figure()
 
-plt.subplot(4, 1, 1)
+plt.subplot(2, 2, 1)
 plt.plot(t, x, 'b')
 plt.ylabel('Cart Position, x (m)')
+plt.xlim(0,duration)
 
-plt.subplot(4, 1, 2)
+plt.subplot(2, 2, 2)
 plt.plot(t, xDot, 'b')
 plt.ylabel('Cart Velocity, x'' (m/s)')
+plt.xlim(0,duration)
 
-plt.subplot(4, 1, 3)
+plt.subplot(2, 2, 3)
 plt.plot(t, np.rad2deg(theta), 'g')
 plt.ylabel('Pendulum Position, theta (deg)')
+plt.xlim(0,duration)
 
-plt.subplot(4, 1, 4)
+plt.subplot(2, 2, 4)
 plt.plot(t, np.rad2deg(thetaDot), 'g')
 plt.ylabel('Pendulum Angular Velocity, thetaDot (deg/s)')
+plt.xlim(0,duration)
 
 plt.xlabel('Time, t (s)')
 

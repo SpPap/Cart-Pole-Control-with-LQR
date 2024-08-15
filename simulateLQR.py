@@ -78,36 +78,33 @@ for i in range(1, int(totalSteps)):
     theta.append(x0[2])
     thetaDot.append(x0[3])
     
-  
-
-
+    
 # Plot figures
 plt.figure(1)
 
-plt.subplot(4, 1, 1)
+plt.subplot(2, 2, 1)
 plt.plot(t, ref[0]*np.ones([len(t),1]), '--k', t, x, 'b')
 plt.ylabel('Cart Position, x (m)')
 plt.legend(['Reference', 'x position'])
-plt.xlim(0,10)
+plt.xlim(0,duration)
 
-plt.subplot(4, 1, 2)
+plt.subplot(2, 2, 2)
 plt.plot(t, xDot, 'b')
 plt.ylabel('Cart Velocity, x'' (m/s)')
-plt.xlim(0,10)
+plt.xlim(0,duration)
 
-plt.subplot(4, 1, 3)
+plt.subplot(2, 2, 3)
 plt.plot(t, np.rad2deg(ref[2])*np.ones([len(t),1]), '--k', t, np.rad2deg(theta), 'g')
 plt.ylabel('Pendulum Position, theta (deg)')
 plt.legend(['Reference', 'Angle θ'])
-plt.xlim(0,10)
+plt.xlim(0,duration)
 
-plt.subplot(4, 1, 4)
+plt.subplot(2, 2, 4)
 plt.plot(t, np.rad2deg(thetaDot), 'g')
 plt.ylabel('Pendulum Angular Velocity, thetaDot (deg/s)')
-plt.xlim(0,10)
+plt.xlim(0,duration)
 
 plt.xlabel('Time, t (s)')
-
 
 
 # Control Input (Force)
